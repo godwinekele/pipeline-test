@@ -43,14 +43,14 @@ pipeline {
             }
         }
 
-       /* stage('Trigger ManifestUpdate') {
+        stage('Trigger ManifestUpdate') {
             steps{
                 script{
                     echo "triggering kubernetes-deployment job"
                     build job: 'kubernetes-deployment', parameters: [string(name: 'DOCKER_TAG', value: env.IMAGE_TAG)]
                 }
             }
-        }*/
+        }
 
     }
     
